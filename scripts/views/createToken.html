@@ -70,19 +70,23 @@
     }
 
     .form button {
-      font-family: 'Golos Text', sans-serif;
       text-transform: uppercase;
       outline: 0;
       background: #ff99bd;
       width: 100%;
+      height: 4em;
       border: 0;
-      padding: 1.2em;
       color: #FFFFFF;
       font-size: 1em;
       -webkit-transition: all 0.25 ease;
       transition: all 0.25 ease;
       cursor: pointer;
       transition-duration: 0.25s;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.053em;
+      transition-duration: 1s;
+      display: block;
+      text-align: center;
     }
 
     .form button:hover,
@@ -107,11 +111,10 @@
       color: #3e3c3d;
     }
 
-    button {
-      font-family: 'Montserrat', sans-serif;
-      letter-spacing: 0.053em;
-      transition-duration: 1s;
-      font-weight: 100;
+    .button {
+      width: 100%;
+      line-height: 4em;
+      display: block;
     }
 
     button:hover {
@@ -231,7 +234,7 @@
       <form>
         <h1>add a new user:</h1>
         <input type="text" placeholder="username." />
-        <button>create</button>
+        <button><a class="button" href="http://localhost:3000/newtoken">create</button>
       </form>
     </div>
   </div>

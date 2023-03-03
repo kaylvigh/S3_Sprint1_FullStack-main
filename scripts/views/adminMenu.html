@@ -39,6 +39,7 @@
             font-size: inherit;
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
+
         }
 
         /* Navbar */
@@ -164,19 +165,23 @@
         }
 
         .form button {
-            font-family: 'Golos Text', sans-serif;
             text-transform: uppercase;
             outline: 0;
             background: #ff99bd;
             width: 100%;
+            height: 4em;
             border: 0;
-            padding: 1.2em;
             color: #FFFFFF;
             font-size: 1em;
             -webkit-transition: all 0.25 ease;
             transition: all 0.25 ease;
             cursor: pointer;
             transition-duration: 0.25s;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.053em;
+            transition-duration: 1s;
+            display: block;
+            text-align: center;
         }
 
         .form button:hover,
@@ -201,10 +206,10 @@
             color: #3e3c3d;
         }
 
-        button {
-            font-family: 'Montserrat', sans-serif;
-            letter-spacing: 0.053em;
-            transition-duration: 1s;
+        .button {
+            width: 100%;
+            line-height: 4em;
+            display: block;
         }
 
         button:hover {
@@ -232,9 +237,9 @@
         <div class="form">
             <form>
                 <h1>administrator menu:</h1>
-                <button><a href="http://localhost:3000/allTokens">all tokens</a></button>
-                <button><a href="http://localhost:3000/expire">expired tokens</a></button>
-                <button><a href="http://localhost:3000/count">token count</a></button>
+                <button><a class="button" href="http://localhost:3000/allTokens">all tokens</a></button>
+                <button><a class="button" href="http://localhost:3000/expire">expired tokens</a></button>
+                <button><a class="button" href="http://localhost:3000/count">token count</a></button>
             </form>
         </div>
     </div>

@@ -23,6 +23,8 @@
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
             font-size: 1em;
+            margin-bottom: 1em;
+            word-wrap: break-word;
         }
 
         body {
@@ -232,8 +234,7 @@
         <div class="form">
             <form>
                 <h1>all tokens:</h1>
-                <h2>all token(s) ${JSON.stringify(tokenList)} <br /> <br /></h2>
-                <!-- not working -->
+                <h2>${JSON.stringify(tokenList)}<br /> <br /></h2>
                 <button><a href="http://localhost:3000/adminmenu">admin menu</a></button>
             </form>
         </div>
